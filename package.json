@@ -1,5 +1,9 @@
 {
+  "type": "module",
   "scripts": {
     "test": "playwright test"
+  },
+  "devDependencies": {
+    "playwright": "^1.45.1"
   }
 }
