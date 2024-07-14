@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test.mjs'
+import { test, expect } from '@playwright/test'
 import Vector2 from "./vector2.js"
 
 // TO HAR INTSTALLERAT NODE OCH NPM OCH SEDAN PLAYWRIGHT SOM DU HÅLLER PÅ ATT FÅ IGÅNG, DEN HITTAR DEN INTE NPM TEST KOLLA CONFIG FIL

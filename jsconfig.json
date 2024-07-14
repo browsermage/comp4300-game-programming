@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
     "target": "ESNext",
     "checkJs": true,
     // Strict Checks
@@ -14,13 +15,5 @@
     "noUncheckedIndexedAccess": true, // accessing index must always check for undefined
     "noUnusedLocals": true, // Report errors on unused local variables.
     "noUnusedParameters": true, // Report errors on unused parameters in functions
-    "paths": {
-      "@playwright/*": [
-        "./node_modules/playwright/*"
-      ]
-    },
-    "typeRoots": [
-      "./node_modules/playwright/*"
-    ]
   }
 }

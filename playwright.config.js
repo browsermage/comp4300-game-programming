@@ -1,30 +1,35 @@
-import { devices } from '@playwright/test.mjs'
+// @ts-check
+import { defineConfig, devices } from '@playwright/test'
 
-const config = {
-    testDir: './lib/vector2/',
+export default defineConfig({
+    testDir: './lib',
+    /* Run tests in files in parallel */
+    fullyParallel: true,
     projects: [
         {
             name: 'chromium',
-            use: { browserName: 'chromium' }
+            use: { ...devices['Desktop Chrome'] },
         },
+
         {
             name: 'firefox',
-            use: { browserName: 'firefox' }
+            use: { ...devices['Desktop Firefox'] },
         },
-        {
-            name: 'webKit',
-            use: { browserName: 'webkit' }
-        },
-        {
-            name: 'mobile-chromium',
 
-            use: devices['Pixel 5']
+        {
+            name: 'webkit',
+            use: { ...devices['Desktop Safari'] },
+        },
+
+        /* Test against mobile viewports. */
+        {
+            name: 'Mobile Chrome',
+            use: { ...devices['Pixel 5'] },
         },
         {
-            name: 'mobile-webkit',
-            use: devices['iPhone 13']
-        }
-    ]
-}
+            name: 'Mobile Safari',
+            use: { ...devices['iPhone 12'] },
+        },
+    ],
+});
 
-export default config
