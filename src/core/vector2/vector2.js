@@ -34,6 +34,7 @@ export default class Vector2 {
      * 
      * @param {Vector2} v An instance of Vector2. This represents the vector to be added to the current vector.
      * @returns {Vector2} The method returns the current vector (this).
+     * 
      * @example
      * // Example usage:
      * const vector1 = new Vector2(1, 2)
@@ -43,6 +44,25 @@ export default class Vector2 {
     add(v) {
         this.x += v.x
         this.y += v.y
+
+        return this
+    }
+
+    /**
+     * Subtracts the components of the given vector from the current vector.
+     * 
+     * @param {Vector2} v An instance of Vector2. This represents the vector to be subtracted from the current vector.
+     * @returns {Vector2} The method returns the current vector (this).
+     * 
+     * @example
+     * // Example usage:
+     * const vector1 = new Vector2(3, 4)
+     * const vector2 = new Vector2(1, 2)
+     * vector1.subtract(vector2) // Now vector1 has components (2, 2)
+     */
+    subtract(v) {
+        this.x -= v.x
+        this.y -= v.y
 
         return this
     }
@@ -80,5 +100,27 @@ export default class Vector2 {
      */
     distance(v) {
         return Math.sqrt((v.x - this.x) * (v.x - this.x) + (v.y - this.y) * (v.y - this.y))
+    }
+
+    /**
+     * Calculates the length of this vector.
+     *
+     * @example
+     * // Example usage:
+     * const vector1 = new Vector2(1, 2)
+     * const length = vector1.length() // length is 5
+     * @returns {number} The length of the vector.
+     */
+    length() {
+        return Math.sqrt(this.x ** 2 + this.y ** 2)
+    }
+
+    /**
+     * Checks if this vector is equal to another vector.
+     * @param {Vector2} v - The vector to compare against.
+     * @returns {boolean} True if the vectors are equal, false otherwise. 
+     */
+    equal(v) {
+        return (this.x === v.x && this.y === v.y)
     }
 }
