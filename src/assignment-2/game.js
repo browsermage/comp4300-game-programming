@@ -1,4 +1,5 @@
-import Vector2 from "../lib/vector2/vector2.js"
+import Vector2 from '../lib/vector2/vector2.js'
+
 
 function main() {
     const vec1 = new Vector2(100, 100)
@@ -7,6 +8,7 @@ function main() {
     vec1.add(vec2)
 
     console.log(vec1)
+
 }
 
 main()
