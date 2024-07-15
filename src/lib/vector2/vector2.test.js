@@ -1,9 +1,6 @@
 import { test, expect } from '@playwright/test'
 import Vector2 from "./vector2.js"
 
-// TO HAR INTSTALLERAT NODE OCH NPM OCH SEDAN PLAYWRIGHT SOM DU HÅLLER PÅ ATT FÅ IGÅNG, DEN HITTAR DEN INTE NPM TEST KOLLA CONFIG FIL
-
-
 test('Test Vector2 class methods', async () => {
     // Create a vector with default values
     const defaultVector = new Vector2()
@@ -37,15 +34,17 @@ test('Test Vector2 class methods', async () => {
     expect(vector5.y).toBe(15)
 
     // Test the distance method
-    const vector7 = new Vector2(1, 2)
-    const vector8 = new Vector2(4, 6)
+    const vector7 = new Vector2(2, 3)
+    const vector8 = new Vector2(5, 1)
     const distance = vector7.distance(vector8)
-    expect(distance).toBeCloseTo(5, 2) // Approximately 5
+    expect(distance).toBe(3.6) // about 3.6
+
+    // 
 
     // Test the length method
     const vector9 = new Vector2(1, 2)
     const length = vector9.length()
-    expect(length).toBeCloseTo(5, 2) // Approximately 5
+    expect(length).toBe(5) // 5
 
     // Test the equal method
     const vector10 = new Vector2(3, 4)

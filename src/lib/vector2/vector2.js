@@ -99,7 +99,7 @@ export default class Vector2 {
      * const distance = vector1.distance(vector2) // distance is approximately 5
      */
     distance(v) {
-        return Math.sqrt((v.x - this.x) * (v.x - this.x) + (v.y - this.y) * (v.y - this.y))
+        return Number((Math.sqrt(Math.pow(v.x - this.x, 2) + Math.pow(v.y - this.y, 2))).toFixed(1))
     }
 
     /**
