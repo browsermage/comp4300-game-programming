@@ -99,7 +99,7 @@ export default class Vector2 {
      * const distance = vector1.distance(vector2) // distance is approximately 5
      */
     distance(v) {
-        return Number((Math.sqrt(Math.pow(v.x - this.x, 2) + Math.pow(v.y - this.y, 2))).toFixed(1))
+       return Math.round(Math.sqrt(Math.pow(v.x - this.x, 2) + Math.pow(v.y - this.y, 2)) * 10) / 10
     }
 
     /**
@@ -108,11 +108,11 @@ export default class Vector2 {
      * @example
      * // Example usage:
      * const vector1 = new Vector2(1, 2)
-     * const length = vector1.length() // length is 5
+     * const length = vector1.length() // length is 2.2
      * @returns {number} The length of the vector.
      */
     length() {
-        return Math.sqrt(this.x ** 2 + this.y ** 2)
+        return Math.round(Math.sqrt(this.x ** 2 + this.y ** 2) * 10) / 10
     }
 
     /**

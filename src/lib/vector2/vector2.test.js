@@ -44,7 +44,7 @@ test('Test Vector2 class methods', async () => {
     // Test the length method
     const vector9 = new Vector2(1, 2)
     const length = vector9.length()
-    expect(length).toBe(5) // 5
+    expect(length).toBe(2.2) // 2.2
 
     // Test the equal method
     const vector10 = new Vector2(3, 4)
