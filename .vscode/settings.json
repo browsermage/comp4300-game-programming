@@ -1,0 +1,14 @@
+{
+    "workbench.colorTheme": "Kanagawa Paper",
+    "editor.fontSize": 16,
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500,
+        "javascript.preferences.importModuleSpecifierEnding": "js",
+        "javascript.preferences.quoteStyle": "double",
+    },
+    "javascript.format.semicolons": "remove",
+    "explorer.compactFolders": false,
+    "livePreview.autoRefreshPreview":"On Changes to Saved Files",
+    "livePreview.customExternalBrowser": "Chrome",
+    "livePreview.openPreviewTarget": "External Browser"
+}

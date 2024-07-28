@@ -1,0 +1,17 @@
+{
+    "window": {
+        "width": 1280,
+        "height": 720,
+        "frameLimit": 60,
+        "fullScreen": false
+    },
+    "player": {
+        "sphereRadius": 10,
+        "collisionRadius": 10,
+        "speed": 5,
+        "fillColor": "#008800",
+        "outlineColor": "#990099",
+        "outlineThickness": 4,
+        "shapeVertices": 4
+    }
+}
