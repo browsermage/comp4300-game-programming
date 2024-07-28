@@ -5,15 +5,22 @@ export default class Entity {
     /** @type {number} */
     #id
 
+    /** @type {string} */
     #tag
 
     #alive = true
 
+    transform
+    shape
+    collision
+    input
+    score
+    lifespan
+
     /**
      * Creates an Entity instance.
      *
-     * @constructor
-     * @param {string} [tag="default"] - The entity's tag.
+     * @param {string} [tag="default"] - Tags help you identify entities for scripting purposes.
      * @param {number} [id=0] - The entity's unique identifier.
      */
     constructor(tag = 'default', id = 0) {
@@ -45,11 +52,11 @@ export default class Entity {
      * @returns {string} The entity's tag.
      */
     tag() {
-        return this.tag
+        return this.#tag
     }
 
     /**
-     * Destroys the entity.
+     * Destroys the entity on the end of the frame
      * @returns void
      */
     destroy() {
