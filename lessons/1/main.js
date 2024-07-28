@@ -9,4 +9,4 @@ const shape = new Shape(2,3,4)
 
 v1.add(v2).subtract(v2).scale(v2)
 
-console.dir(config)
+console.log(config)

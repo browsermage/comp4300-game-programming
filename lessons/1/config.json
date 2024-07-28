@@ -5,13 +5,40 @@
         "frameLimit": 60,
         "fullScreen": false
     },
+    "font": {
+        "font": "Verdana",
+        "fontSize": "16px",
+        "fontColor": "#FF00FF"
+    },
     "player": {
-        "sphereRadius": 10,
-        "collisionRadius": 10,
+        "sphereRadius": 32,
+        "collisionRadius":32,
         "speed": 5,
         "fillColor": "#008800",
         "outlineColor": "#990099",
-        "outlineThickness": 4,
-        "shapeVertices": 4
+        "outlineThickness": 5,
+        "shapeVertices": 5
+    },
+    "enemy": {
+        "shapeRadius": 32,
+        "collisionRadius": 32,
+        "minSpeed": 3,
+        "maxSpeed": 3,
+        "minVertices": 3,
+        "maxVertices": 8,
+        "outlineColor": "#00FF88",
+        "outlineThickness": "#445566",
+        "lifespan": "90",
+        "spawnInterval": 60
+    },
+    "bullet": {
+        "sphereRadius": 10,
+        "collisionRadius": 10,
+        "speed": 10,
+        "fillColor": "#FFFFFF",
+        "outlineColor": "#FFFFFF",
+        "outlineThickness": "2",
+        "shapeVertices": "20",
+        "lifespan": 90
     }
 }
