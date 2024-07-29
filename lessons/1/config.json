@@ -28,7 +28,7 @@
         "maxVertices": 8,
         "outlineColor": "#00FF88",
         "outlineThickness": "#445566",
-        "lifespan": "90",
+        "lifespan": 90,
         "spawnInterval": 60
     },
     "bullet": {
@@ -37,8 +37,8 @@
         "speed": 10,
         "fillColor": "#FFFFFF",
         "outlineColor": "#FFFFFF",
-        "outlineThickness": "2",
-        "shapeVertices": "20",
+        "outlineThickness": 2,
+        "shapeVertices": 20,
         "lifespan": 90
     }
 }
